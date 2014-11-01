@@ -84,8 +84,8 @@
               j = this.j;
           if(field[i][j].mine)
             gameOver(field, i, j);
-          else if (field[i][j].count==0)
-            openCloseTiles(field, i, j);
+          // else if (field[i][j].count==0)
+          //   openCloseTiles(field, i, j);
           else {
             field[i][j].setTexture(texCount[field[i][j].count]);
             field[i][j].interactive = false;
