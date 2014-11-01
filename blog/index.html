@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <link href="bootstrap.min.css" rel="stylesheet"/>
+        <script src="marked.js"></script>
+        <script src="script.js"></script>
+        <title>Document</title>
+    </head>
+    <body>
+      <div class="container">
+        <nav class="navbar navbar-default" role="navigation">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <strong class="navbar-brand">Blog</strong>
+            </div>
+            <div class="collapse navbar-collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="#" id="formToggler">Make post</a></li>
+              </ul>
+              <form id="searchForm" class="navbar-form navbar-left"
+                    role="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+        <div class="new-post hidden">
+          <form class="form-horizontal" name="newPost" role="form">
+            <div class="form-group">
+              <label for="new-subj" class="col-md-1 col-xs-2">Subject</label>
+              <div class="col-md-4 col-xs-10">
+                <input type="text" class="form-control"
+                       id="new-subj" name="subj"/>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="new-body" class="col-md-1 col-xs-2">Body</label>
+              <div class="col-md-4 col-xs-10">
+                <textarea rows="10" cols="30" name="body" id="new-body"
+                          class="form-control"></textarea>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-md-1 col-xs-2"></div>
+              <div class="col-md-4 col-xs-10">
+                <input class="btn btn-primary form-control" type="submit"
+                       name="submit" value="Submit"/></div>
+            </div>
+          </form>
+        </div>
+        <div>
+          <div id="posts-list"></div>
+        </div>
+        <div id="import"></div>
+      </div>
+    </body>
+</html>

@@ -1,0 +1,58 @@
+body{
+  background-image: url(../images/planks.jpg);
+  background-repeat: repeat-x repeat-y;
+  font: bold italic 1em "georgia" serif;
+  color: #522409;
+}
+.container{
+  margin: auto;
+  width: 95%;
+  background: rgba(231,205,174,0.8);
+}
+
+.central{
+  padding: 5%;
+  display: inline-block;
+  margin: 5% auto;
+  text-align: center;
+  background: rgba(206,165,115,0.8);
+  box-shadow: 0 0 8px rgba(0,0,0,0.1), 0 0 16px rgba(0,0,0,0.1);
+}
+
+.right{ text-align: right; }
+
+.center{ text-align: center; }
+
+.text{
+  display: inline-block;
+  margin: 4%;
+  padding: 2%;
+  height: 20%;
+  background: rgba(232,231,144,0.8);
+  box-shadow: 0 0 8px rgba(0,0,0,0.1), 0 0 16px rgba(0,0,0,0.1);
+	font-size: 3em;
+  text-shadow:1px 1px 2px #ddd;
+}
+
+.input {
+  border: 5px solid white;
+  -moz-box-shadow: inset 0 0 8px  rgba(0,0,0,0.1), 0 0 16px rgba(0,0,0,0.1);
+  box-shadow: inset 0 0 8px rgba(0,0,0,0.1), 0 0 16px rgba(0,0,0,0.1);
+  padding: 15px;
+  background: rgba(255,255,255,0.5);
+  margin: 0 0 10px 0;
+  font: bold 1em "georgia" serif;
+  color: #522409;
+}
+
+button:hover{ background: rgba(255,255,255,0.2); };
+
+.clear{ float: none }
+
+#output{ font-size: 2em }
+
+.add-on{
+  border-left: 0;
+  padding-left: 5px;
+  padding-right: 5px;
+}

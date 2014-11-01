@@ -1,0 +1,31 @@
+﻿<!doctype html>
+<html>
+  <head>
+		<meta http-equiv="content-type" content="text/html" charset="utf-8">
+    <title>beer</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/main.css"/>
+    <script src="jquery.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+  
+  <body>
+    <div class="container">
+      <div class="right">
+        <div class="text">
+          Сколько это будет в пиве?
+        </div>
+      </div>
+				
+      <div class="center">
+        <div id="bottles">
+          <p id="output">this text is hidden</p>
+        </div>
+        <div class="central">
+          <input id="main-input" class="input" type="text" size="7" maxlength="7" /><span class="input add-on">руб.</span>
+          <button class="input" type="button" onclick="count()" >ПЕРЕВЕСТИ</button>  
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
